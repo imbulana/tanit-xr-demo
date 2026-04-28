@@ -1,2 +1,5 @@
 %APPDATA%
+.DS_Store
+
 *.glb
+pages-dist/

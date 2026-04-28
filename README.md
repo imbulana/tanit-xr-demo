@@ -1,5 +1,3 @@
-# Tanit XR 3D Scroll Experience
-
 Immersive scroll experience for [Tanit XR](https://tanitxr.org/) heritage models.
 
 ## Project Structure

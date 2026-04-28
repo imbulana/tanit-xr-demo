@@ -1,0 +1,31 @@
+{
+  "id": "traditional-door-medina-of-tunis",
+  "order": 5,
+  "title": "Traditional Door",
+  "location": "Medina of Tunis",
+  "modelPath": "https://pub-e30716010f3f45ebbf35e9759379eae5.r2.dev/models/traditional-door-medina-of-tunis/model.glb?v=new-20260428",
+  "section": {
+    "label": "05 - Medina of Tunis",
+    "titleLines": [
+      "Traditional",
+      "Door"
+    ],
+    "description": "This traditional door from the Medina of Tunis reflects the craft of historic urban homes and neighborhood streets. Its proportions, hardware, and weathered surface speak to everyday architectural heritage that is easily overlooked yet central to the character of the old city."
+  },
+  "scene": {
+    "position": {
+      "x": 3,
+      "y": 0,
+      "z": -72
+    },
+    "size": 5,
+    "rotation": {
+      "x": 0,
+      "y": -0.3,
+      "z": 0
+    }
+  },
+  "ar": {
+    "qrCodePath": "./qr.png"
+  }
+}

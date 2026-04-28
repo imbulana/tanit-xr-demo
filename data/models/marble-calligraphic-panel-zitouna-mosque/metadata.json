@@ -1,0 +1,37 @@
+{
+  "id": "marble-calligraphic-panel-zitouna-mosque",
+  "order": 2,
+  "title": "Marble Calligraphic Panel",
+  "location": "Zitouna Mosque, Tunis",
+  "modelPath": "https://pub-e30716010f3f45ebbf35e9759379eae5.r2.dev/models/marble-calligraphic-panel-zitouna-mosque/model.glb?v=1k-20260428",
+  "section": {
+    "label": "02 - Zitouna Mosque",
+    "titleLines": [
+      "Marble",
+      "Calligraphy"
+    ],
+    "description": "This decorative marble panel from the outer wall of the Zitouna Mosque in Tunis is carved and inlaid with sacred script, framed by geometric motifs. It reflects how text, ornament, and architecture combine in Tunisian Islamic design."
+  },
+  "scene": {
+    "position": {
+      "x": -3,
+      "y": 0,
+      "z": -18
+    },
+    "size": 5,
+    "rotation": {
+      "x": 0,
+      "y": 0.35,
+      "z": 0
+    }
+  },
+  "sketchfab": {
+    "uid": "d62a37fd379e4e3e886589758ecb1f84",
+    "sourceUrl": "https://sketchfab.com/3d-models/marble-calligraphic-panel-zitouna-mosque-d62a37fd379e4e3e886589758ecb1f84",
+    "embedUrl": "https://sketchfab.com/models/d62a37fd379e4e3e886589758ecb1f84/embed",
+    "arAvailable": true
+  },
+  "ar": {
+    "qrCodePath": "./qr.png"
+  }
+}

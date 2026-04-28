@@ -1,0 +1,37 @@
+{
+  "id": "stone-basin-water-temple-zaghouan",
+  "order": 4,
+  "title": "Stone Basin",
+  "location": "Water Temple, Zaghouan",
+  "modelPath": "https://pub-e30716010f3f45ebbf35e9759379eae5.r2.dev/models/stone-basin-water-temple-zaghouan/model.glb?v=1k-20260428",
+  "section": {
+    "label": "04 - Zaghouan",
+    "titleLines": [
+      "Stone",
+      "Basin"
+    ],
+    "description": "This carved stone basin from the Roman Water Temple of Zaghouan was part of a hydraulic system built in the 2nd century CE. It likely helped collect, settle, or regulate spring water before it entered the aqueduct toward Carthage."
+  },
+  "scene": {
+    "position": {
+      "x": 0,
+      "y": 0.5,
+      "z": -54
+    },
+    "size": 4.8,
+    "rotation": {
+      "x": 0,
+      "y": -0.2,
+      "z": 0
+    }
+  },
+  "sketchfab": {
+    "uid": "27c2c2c4260b4b529b8692d93dec841b",
+    "sourceUrl": "https://sketchfab.com/3d-models/stone-basin-water-temple-zaghouan-27c2c2c4260b4b529b8692d93dec841b",
+    "embedUrl": "https://sketchfab.com/models/27c2c2c4260b4b529b8692d93dec841b/embed",
+    "arAvailable": true
+  },
+  "ar": {
+    "qrCodePath": "./qr.png"
+  }
+}

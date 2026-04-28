@@ -1,0 +1,37 @@
+{
+  "id": "birtraditionalwell",
+  "order": 6,
+  "title": "Bir (Traditional Well)",
+  "location": "Medina of Tunis",
+  "modelPath": "https://pub-e30716010f3f45ebbf35e9759379eae5.r2.dev/models/birtraditionalwell/model.glb?v=1k-20260428",
+  "section": {
+    "label": "06 - Medina of Tunis",
+    "titleLines": [
+      "Traditional",
+      "Well"
+    ],
+    "description": "This bir, a traditional Tunisian well, served the practical role of collecting and storing water for daily use in households, religious schools, and community spaces. Its marble arch, black-and-white voussoirs, and colorful tilework turn a utilitarian structure into an architectural centerpiece."
+  },
+  "scene": {
+    "position": {
+      "x": 3,
+      "y": 0,
+      "z": -90
+    },
+    "size": 5,
+    "rotation": {
+      "x": 0,
+      "y": -0.3,
+      "z": 0
+    }
+  },
+  "sketchfab": {
+    "uid": "74d3a1ca1aaf4f5381c2912a581d1afd",
+    "sourceUrl": "https://sketchfab.com/3d-models/birtraditionalwell-74d3a1ca1aaf4f5381c2912a581d1afd",
+    "embedUrl": "https://sketchfab.com/models/74d3a1ca1aaf4f5381c2912a581d1afd/embed",
+    "arAvailable": true
+  },
+  "ar": {
+    "qrCodePath": "./qr.png"
+  }
+}

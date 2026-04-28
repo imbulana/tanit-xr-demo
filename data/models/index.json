@@ -1,0 +1,10 @@
+{
+  "models": [
+    "./draped-statue-byrsa-hill-carthage/metadata.json",
+    "./marble-calligraphic-panel-zitouna-mosque/metadata.json",
+    "./ornamental-mihrab-mahram-medersa-slimanya/metadata.json",
+    "./stone-basin-water-temple-zaghouan/metadata.json",
+    "./traditional-door-medina-of-tunis/metadata.json",
+    "./birtraditionalwell/metadata.json"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "ornamental-mihrab-mahram-medersa-slimanya",
+  "order": 3,
+  "title": "Ornamental Mihrab (Mahram)",
+  "location": "Medersa Slimanya, Medina of Tunis",
+  "modelPath": "https://pub-e30716010f3f45ebbf35e9759379eae5.r2.dev/models/ornamental-mihrab-mahram-medersa-slimanya/model.glb?v=1k-20260428",
+  "section": {
+    "label": "03 - Medersa Slimanya",
+    "titleLines": [
+      "Ornamental",
+      "Mihrab"
+    ],
+    "description": "This 18th-century mahram is an ornamental niche inspired by the form of a mihrab. Alternating marble voussoirs, a scalloped plaster shell, and patterned qallaline tiles turn a sacred architectural language into refined decoration."
+  },
+  "scene": {
+    "position": {
+      "x": 2.5,
+      "y": 0.5,
+      "z": -36
+    },
+    "size": 5.4,
+    "rotation": {
+      "x": 0,
+      "y": -0.35,
+      "z": 0
+    }
+  },
+  "sketchfab": {
+    "uid": "11f7430ffd5e4c93858e1c3ec47a6969",
+    "sourceUrl": "https://sketchfab.com/3d-models/ornamental-mihrab-mahram-medersa-slimanya-11f7430ffd5e4c93858e1c3ec47a6969",
+    "embedUrl": "https://sketchfab.com/models/11f7430ffd5e4c93858e1c3ec47a6969/embed",
+    "arAvailable": true
+  },
+  "ar": {
+    "qrCodePath": "./qr.png"
+  }
+}

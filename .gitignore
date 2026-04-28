@@ -3,3 +3,4 @@
 
 *.glb
 pages-dist/
+.wrangler/

@@ -10,7 +10,7 @@
       "Stone",
       "Basin"
     ],
-    "description": "This carved stone basin from the Roman Water Temple of Zaghouan was part of a hydraulic system built in the 2nd century CE. It likely helped collect, settle, or regulate spring water before it entered the aqueduct toward Carthage."
+    "description": "This carved stone basin, located within the Roman Water Temple of Zaghouan, was part of the elaborate hydraulic system built in the 2nd century CE under Emperor Hadrian. Likely used as a settling or distribution basin, it collected and regulated spring water before it began its journey along the great aqueduct to Carthage."
   },
   "scene": {
     "position": {
@@ -26,9 +26,9 @@
     }
   },
   "sketchfab": {
-    "uid": "27c2c2c4260b4b529b8692d93dec841b",
-    "sourceUrl": "https://sketchfab.com/3d-models/stone-basin-water-temple-zaghouan-27c2c2c4260b4b529b8692d93dec841b",
-    "embedUrl": "https://sketchfab.com/models/27c2c2c4260b4b529b8692d93dec841b/embed",
+    "uid": "25ab1ce8609441b98c4200310bd7d499",
+    "sourceUrl": "https://sketchfab.com/3d-models/stone-basin-water-temple-zaghouan-25ab1ce8609441b98c4200310bd7d499",
+    "embedUrl": "https://sketchfab.com/models/25ab1ce8609441b98c4200310bd7d499/embed",
     "arAvailable": true
   },
   "ar": {

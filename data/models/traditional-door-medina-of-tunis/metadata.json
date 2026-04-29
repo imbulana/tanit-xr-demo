@@ -10,7 +10,7 @@
       "Traditional",
       "Door"
     ],
-    "description": "This traditional door from the Medina of Tunis reflects the craft of historic urban homes and neighborhood streets. Its proportions, hardware, and weathered surface speak to everyday architectural heritage that is easily overlooked yet central to the character of the old city."
+    "description": "This scan captures a traditional Tunisian door in the Medina of Tunis, crafted from heavy wood and reinforced with metal studs. Its intricate nail-studded motifs create geometric and symbolic patterns that reflect centuries-old artisanal techniques, while the two round iron knockers balance utility and artistry in Tunisian architectural design."
   },
   "scene": {
     "position": {
@@ -24,6 +24,12 @@
       "y": -0.3,
       "z": 0
     }
+  },
+  "sketchfab": {
+    "uid": "e25a2062afc34055a933f8c7af612d67",
+    "sourceUrl": "https://sketchfab.com/3d-models/traditional-door-medina-of-tunis-e25a2062afc34055a933f8c7af612d67",
+    "embedUrl": "https://sketchfab.com/models/e25a2062afc34055a933f8c7af612d67/embed",
+    "arAvailable": true
   },
   "ar": {
     "qrCodePath": "./qr.png"

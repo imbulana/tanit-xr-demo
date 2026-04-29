@@ -10,7 +10,7 @@
       "Draped",
       "Statue"
     ],
-    "description": "This fragmented marble statue from Byrsa Hill in Carthage shows a Roman figure wrapped in heavy drapery. Though the head and arms are missing, the carved folds preserve a sense of public dignity and Roman sculptural craftsmanship."
+    "description": "This marble statue from Byrsa Hill, the ancient citadel of Carthage, represents a youthful figure in a long draped garment typical of Roman portrait sculpture. Its uncertain identity and Roman styling reflect the city’s artistic life after reconstruction, preserved here through a Tanit XR 3D scan."
   },
   "scene": {
     "position": {
@@ -26,12 +26,12 @@
     }
   },
   "sketchfab": {
-    "uid": "e2d5952ce92440b6a9c3e23ec2ea075a",
-    "sourceUrl": "https://sketchfab.com/3d-models/roman-draped-statue-byrsa-hill-carthage-opt-e2d5952ce92440b6a9c3e23ec2ea075a",
-    "embedUrl": "https://sketchfab.com/models/e2d5952ce92440b6a9c3e23ec2ea075a/embed",
+    "uid": "391bb9b7d8384daaa66300363baa0005",
+    "sourceUrl": "https://sketchfab.com/3d-models/draped-statue-byrsa-hill-carthage-391bb9b7d8384daaa66300363baa0005",
+    "embedUrl": "https://sketchfab.com/models/391bb9b7d8384daaa66300363baa0005/embed",
     "arAvailable": true
   },
   "ar": {
-    "qrCodePath": "./qr.png"
+    "qrCodePath": "./qr.png?v=20260428-2135"
   }
 }

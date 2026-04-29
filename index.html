@@ -60,11 +60,12 @@
 
     .section-content {
       pointer-events: auto;
+      position: relative;
       opacity: 0;
       transform: translateY(40px);
       transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
       max-width: 520px;
-      padding: 0 40px;
+      padding: 0 40px 18px;
     }
 
     .section-content.visible {
@@ -96,16 +97,22 @@
       font-size: clamp(28px, 4vw, 48px);
       font-weight: 700;
       line-height: 1.1;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
       color: var(--accent);
       text-shadow: 0 3px 28px rgba(0,0,0,0.8);
     }
 
     .section-desc {
+      position: relative;
       font-size: 15px;
       line-height: 1.7;
       color: rgba(232,228,223,0.78);
       font-weight: 400;
+      padding: 16px 18px;
+      border: 1px solid rgba(216,174,96,0.48);
+      border-radius: 6px;
+      background: rgba(10,10,15,0.56);
+      box-shadow: inset 0 0 28px rgba(216,174,96,0.16);
       text-shadow: 0 1px 18px rgba(0,0,0,0.72);
     }
 
@@ -120,8 +127,11 @@
     }
 
     body.theme-light .section-desc {
-      color: rgba(28,24,22,0.88);
-      text-shadow: none;
+      color: rgba(232,228,223,0.88);
+      border-color: rgba(216,174,96,0.48);
+      background: rgba(10,10,15,0.56);
+      box-shadow: inset 0 0 28px rgba(216,174,96,0.16);
+      text-shadow: 0 1px 18px rgba(0,0,0,0.72);
     }
 
     .nav-bar {
@@ -349,12 +359,14 @@
       gap: 14px;
       width: min(24vw, 260px);
       padding: 14px;
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 16px;
-      background: rgba(10,10,15,0.9);
+      border: 1px solid rgba(216,174,96,0.48);
+      border-radius: 6px;
+      background: rgba(10,10,15,0.72);
+      box-shadow: inset 0 0 28px rgba(216,174,96,0.16);
       backdrop-filter: blur(14px);
       pointer-events: auto;
       opacity: 0.9;
+      text-decoration: none;
       transition: opacity 0.4s ease, transform 0.4s ease, left 0.4s ease, right 0.4s ease;
       transform: translateY(-50%);
     }
@@ -379,7 +391,7 @@
       width: 100%;
       aspect-ratio: 1;
       height: auto;
-      border-radius: 10px;
+      border-radius: 6px;
       background: #fff;
       object-fit: contain;
       opacity: 0;
@@ -390,16 +402,29 @@
       opacity: 1;
     }
 
+    body.theme-light .ar-qr {
+      border-color: rgba(156,112,42,0.42);
+      background: rgba(28,24,22,0.72);
+      box-shadow: inset 0 0 24px rgba(202,151,48,0.15);
+    }
+
     .ar-qr span {
       display: block;
       max-width: 100%;
       font-size: 12px;
+      font-weight: 700;
       line-height: 1.4;
-      color: var(--muted);
+      color: #fff;
       letter-spacing: 1px;
       text-transform: uppercase;
       text-align: center;
+      text-decoration: none;
       text-shadow: 0 2px 14px rgba(0,0,0,0.9);
+    }
+
+    body.theme-light .ar-qr span {
+      color: #fff;
+      text-shadow: none;
     }
 
     .progress-bar {
@@ -448,7 +473,7 @@
         font-size: 16px;
       }
       .logo { width: 58px; height: 58px; }
-      .section-content { padding: 0 24px; }
+      .section-content { padding: 0 24px 18px; }
       .ar-qr {
         top: auto;
         bottom: 24px;
@@ -780,29 +805,7 @@
   dynamicLight.position.set(0, 3, 5);
   scene.add(dynamicLight);
 
-  const museumSpotTarget = new THREE.Object3D();
-  museumSpotTarget.position.set(0, 0, 0);
-  scene.add(museumSpotTarget);
-
-  const museumSpotLight = new THREE.SpotLight(0xfff0d8, 2.05, 38, Math.PI / 6.2, 0.78, 1.05);
-  museumSpotLight.position.set(0, 8, 0.8);
-  museumSpotLight.target = museumSpotTarget;
-  museumSpotLight.castShadow = true;
-  museumSpotLight.shadow.mapSize.set(2048, 2048);
-  museumSpotLight.shadow.camera.near = 0.5;
-  museumSpotLight.shadow.camera.far = 42;
-  museumSpotLight.shadow.bias = -0.0015;
-  scene.add(museumSpotLight);
-
-  const museumFillLight = new THREE.PointLight(0xd8e8ff, 0.35, 28);
-  museumFillLight.position.set(-3, 3, 4);
-  scene.add(museumFillLight);
-
-  const museumRimLight = new THREE.PointLight(0xffb46f, 0.45, 24);
-  museumRimLight.position.set(3, 4, -3);
-  scene.add(museumRimLight);
-
-  const museumBottomLight = new THREE.PointLight(0xffdfb8, 0.38, 16);
+  const museumBottomLight = new THREE.PointLight(0xffdfb8, 0.62, 22);
   museumBottomLight.position.set(0, -1.6, 0);
   scene.add(museumBottomLight);
 
@@ -1822,37 +1825,10 @@
     const litY = activeGroup ? activeGroup.position.y : activeConfig.position.y;
     const litZ = activeGroup ? activeGroup.position.z : activeConfig.position.z;
     const lightPulse = 0.04 * Math.sin(t * 1.25);
-    const viewDir = new THREE.Vector3(
-      camera.position.x - litX,
-      0,
-      camera.position.z - litZ
-    ).normalize();
-    const sideDir = new THREE.Vector3(-viewDir.z, 0, viewDir.x);
-
-    museumSpotTarget.position.x = lerp(museumSpotTarget.position.x, litX, 0.09);
-    museumSpotTarget.position.y = lerp(museumSpotTarget.position.y, litY + 0.65, 0.09);
-    museumSpotTarget.position.z = lerp(museumSpotTarget.position.z, litZ, 0.09);
-    museumSpotTarget.updateMatrixWorld();
-
-    museumSpotLight.position.x = lerp(museumSpotLight.position.x, litX + mouseX * 0.25, 0.08);
-    museumSpotLight.position.y = lerp(museumSpotLight.position.y, litY + 8.2, 0.08);
-    museumSpotLight.position.z = lerp(museumSpotLight.position.z, litZ + 0.9, 0.08);
-    museumSpotLight.intensity = 2.05 + lightPulse;
-
-    museumFillLight.position.x = lerp(museumFillLight.position.x, litX + viewDir.x * 5.2, 0.07);
-    museumFillLight.position.y = lerp(museumFillLight.position.y, litY + 2.2, 0.07);
-    museumFillLight.position.z = lerp(museumFillLight.position.z, litZ + viewDir.z * 5.2, 0.07);
-    museumFillLight.intensity = 0.35 + lightPulse * 0.3;
-
-    museumRimLight.position.x = lerp(museumRimLight.position.x, litX - viewDir.x * 3.8 + sideDir.x * 2.2, 0.07);
-    museumRimLight.position.y = lerp(museumRimLight.position.y, litY + 3.0, 0.07);
-    museumRimLight.position.z = lerp(museumRimLight.position.z, litZ - viewDir.z * 3.8 + sideDir.z * 2.2, 0.07);
-    museumRimLight.intensity = 0.45 + lightPulse * 0.4;
-
     museumBottomLight.position.x = lerp(museumBottomLight.position.x, litX, 0.07);
     museumBottomLight.position.y = lerp(museumBottomLight.position.y, litY - 1.35, 0.07);
     museumBottomLight.position.z = lerp(museumBottomLight.position.z, litZ + 0.4, 0.07);
-    museumBottomLight.intensity = 0.38 + lightPulse * 0.25;
+    museumBottomLight.intensity = 0.62 + lightPulse * 0.35;
 
     // Animate key light color subtly
     const lHue = 0.08 + Math.sin(t * 0.2) * 0.02;
